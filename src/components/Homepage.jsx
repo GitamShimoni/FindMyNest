@@ -1,6 +1,6 @@
 import '../App.css';
 
-import Welcoming from './welcoming';
+import Welcoming from './Welcoming';
 import Commercial from './Commercial';
 import MortgageCalculator from './MortgageCalculator';
 
