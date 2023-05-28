@@ -1,0 +1,46 @@
+#header{
+    position: sticky;
+    border-bottom: 5px solid #2799E4;
+    font-weight: 600;
+    background-color: white;
+}
+.navbar h1:before{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 0px;
+    height: 0.15vw;
+    background: #609ffe;
+    content: "";
+    opacity: 1;
+    transition: all 0.4s;
+}
+.navbar h1:hover::before{
+    left: 0;
+    width: 100%;
+}
+.navbar h1{
+    color: #303030;
+    text-decoration: none;
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 100%;
+    align-items: center;
+}
+#nest-icon{
+    height: 5vw;
+    border-radius: 25px;
+}
+a{
+    color: black;
+}

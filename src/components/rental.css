@@ -1,0 +1,102 @@
+.place-box{
+    margin: 2vw;
+    border-radius: 3px;
+    box-shadow: 0px 0px 8px 2px #A8A8A8;
+    width: 35vw;
+    font-size: 1em;
+    transition: ease-in-out 0.4s;
+    border-radius: 1vw;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .place-box{
+        width: 45vw;
+        margin-left: auto;
+    }
+}
+/* .place-box:before{
+    width: 100%;
+    height: 10%;
+    background: white;
+}
+.place-box:after{
+    height: 100%;
+    width: 10%;
+    background: white;
+} */
+
+.place-box:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 8px 2px #6F6BA8;
+}
+.place-picture{
+    width: 100%;
+    border-radius: 1vw;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#place-picture-box{
+    z-index: 0;
+    position: relative;
+}
+#place-price-div{
+    background: rgb(250, 240, 240);
+    border-radius: 1vw;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 15vw;
+    position: absolute;
+    bottom: 0.2vw;
+    left: 1vw;
+    z-index: 1;
+    border-bottom: 0.4vw solid rgb(96, 173, 250);
+}
+#place-price-h1{
+    font-size: 2.5vw;
+}
+#place-price-h1:hover{
+    color: green;
+}
+#rental-description-info{
+    display: flex;
+    align-items: center;
+    font-size: 0.7vw;
+    justify-content: space-around;
+}
+#rental-description-bedroom-div{
+    display: flex;
+    align-items: center;
+}
+#rental-description-area{
+    display: flex;
+    align-items: center;
+    font-size: 1.2vw;
+}
+#rental-description-area-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#rental-description-box{
+    display: flex;
+    flex-direction: column
+}
+#heart-icon-selected{
+    color: rgb(255, 0, 0);
+}
+#heart-icon-notselected{
+    color: gray;
+}
+#heart-icon-selected:hover{
+    cursor: pointer;
+}
+#heart-icon-notselected:hover{
+    cursor: pointer;
+}
+#heart-icon-div{
+    margin: 0.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

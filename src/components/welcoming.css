@@ -1,0 +1,47 @@
+#welcoming{
+    margin-top: 20vw;
+    /* background-image: url("https://i0.wp.com/www.allcadblocks.com/wp-content/uploads/2016/11/Wallpapers-1920x1080-1.jpg?fit=1920%2C1080&ssl=1"); */
+    /* background-image: url("https://img.freepik.com/free-vector/silhouette-skyline-illustration_53876-78786.jpg?w=996&t=st=1683746227~exp=1683746827~hmac=2a1fbf0d827268cefde34a7db49164385b365515f7d62bcfabe0bc70fa22ac48"); */
+    background-image: url("https://i.ibb.co/ZgRKcmb/background.jpg");
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    height: 40vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 3px solid #2799E4;
+    border-bottom-left-radius: 35vw;
+    border-bottom-right-radius: 35vw;
+    margin-bottom: 15vw;
+}
+#welcoming-header{
+    font-size: 6vw;
+
+}
+#slogan-header{
+    font-size: 3vw;   
+}
+#input-place{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: white;
+    width: 40vw;
+    height: 4vw;
+    border: 0.5px solid rgb(88, 88, 88);
+}
+#search-button{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 6vw;
+    height: 4vw;
+    background-color: rgb(204, 204, 204);
+    border: 0.5px solid rgb(88, 88, 88);
+}
+#searchbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

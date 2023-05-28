@@ -1,0 +1,177 @@
+#useful-tools{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#calculator-agents-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 15vw;
+    position: relative;
+    background: linear-gradient(292deg, rgba(221,221,221,1) 0%, rgba(122,136,238,1) 100%);
+    border-radius: 10vw;
+    padding-left: 5vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    padding-right: 5vw;
+    height: 45vw;
+    width: 70vw;
+    overflow: hidden;
+}
+#calculator-agents-div:before {
+  content: "";
+  position: absolute;
+  width: 85vw;
+  height: 25vw;
+  transform: rotate(38deg);
+  left: -8vw;
+  bottom: 9vw;
+  z-index: 0;
+  background: linear-gradient(60deg, rgb(238, 238, 238) 0%, rgba(151,163,250,1) 100%);
+  border-radius: 15vw;
+}
+
+#agents-div{
+    width: 40vw;
+    height: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-right: 3vw;
+    z-index: 1;
+}
+
+#agent-div-1{
+    font-size: 2vw;
+}
+
+#agent1-div-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#agent-2-picture{
+    width: 18vw;
+    border-radius: 100vw;
+    box-shadow: 0px 3px 20px 3px #5c53fb;
+    transition: 0.6s;
+}
+#agent-2-picture:hover{
+  box-shadow: 0px 3px 20px 4px #1b12cd;
+}
+#agent-div-2{
+    display: flex;
+    justify-content: space-between;
+}
+#agent2-div-description1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.8vw;
+}
+#agent-3-picture{
+    width: 18vw;
+    border-radius: 100vw;
+    box-shadow: 0px 3px 20px 3px #5c53fb;
+    transition: 0.6s;
+  }
+  #agent-3-picture:hover{
+    box-shadow: 0px 3px 20px 4px #1b12cd;
+  }
+#agent-div-3{
+    display: flex;
+    justify-content: space-between;
+}
+
+#agent3-div-description1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.8vw;
+}
+
+
+
+.mortgage-calculator {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 auto;
+    width: 35vw;
+    height: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .calculator-heading {
+    text-align: center;
+    font-size: 2.1vw;
+    margin-bottom: 0.3vw;
+  }
+  
+  .calculator-form {
+    display: flex;
+    flex-direction: column;
+    height: 40vw;
+    font-size: 1.6vw;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5vw;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="number"] {
+    width: 25vw;
+    height: 5vw;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2vw;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 5vw;
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .result {
+    margin-top: 1.5vw;
+    text-align: center;
+    margin-bottom: 1vw;
+  }
+  
+  .result h3 {
+    font-size: 1.5vw
+  }
+  
+  .result p {
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: #4CAF50;
+  }
