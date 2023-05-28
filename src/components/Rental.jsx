@@ -35,7 +35,6 @@ function Rental(value) {
           </div>
           <div id="rental-description-box">
             <h3 className="place-name">{`${value.value.city}, ${value.value.country}.`}</h3>
-            {/* <p className='place-desc'>{`${value.value.streetAddress}, ${value.value.zipcode}`}</p> */}
             <div id="rental-description-info">
               <div id="rental-description-bedroom-div">
                 <h1 id="rental-description-bedroom">

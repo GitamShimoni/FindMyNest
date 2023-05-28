@@ -4,7 +4,6 @@ import './explorerentals.css'
 
 function ExploreRentals(value) {
 
-  // const [rental, setRental] = useState();
 
   return (
     <div id='explore-rentals'>

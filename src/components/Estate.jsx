@@ -12,7 +12,6 @@ import { useState, useEffect } from 'react';
 
 const Estate = (value) => {
 
-  // const [isLiked, setIsLiked] = useState(localStorage.getItem(value.value.zpid));
   const [likedItems, setLikedItems] = useState(JSON.parse(localStorage.getItem('items')) || []);
   useEffect(() => {
     localStorage.setItem("items", JSON.stringify(likedItems))
@@ -27,10 +26,6 @@ const Estate = (value) => {
     });
   }
 
-    // function handleLikeClick(){
-    //   setIsLiked(!isLiked);
-    //   isLiked ? localStorage.removeItem(value.value.zpid) : localStorage.setItem(value.value.zpid, !isLiked)
-    // }
 
   return (
     <div id='real-estate-page'>

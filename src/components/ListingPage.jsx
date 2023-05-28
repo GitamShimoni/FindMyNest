@@ -9,7 +9,7 @@ const ListingPage = () => {
   const [isDisplayChecked, setIsDisplayCheck] = useState(true);
   const [isFilterChecked, setIsFilterCheck] = useState(false);
   const [isLikedChecked, setIsLikedCheck] = useState(false);
-  // const [, setLocalStorageCleared] = useState(false);
+  
   const [data1, setData] = useState();
   const [sortBy, setsortBy] = useState();
 
@@ -97,7 +97,6 @@ const ListingPage = () => {
             value?.bathrooms <= maxBathroomsNull &&
             isInFavorite
             
-            // localStorage?.getItem(value.zpid)
           );
         })
       );

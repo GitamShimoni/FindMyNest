@@ -1,4 +1,3 @@
-import "./EstatePage.css";
 import Estate from "./Estate";
 import { useParams } from "react-router-dom";
 import data from "../data.json";
