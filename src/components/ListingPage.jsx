@@ -3,13 +3,13 @@ import Carousel from "better-react-carousel";
 import data from "../data.json";
 import { useState, useEffect } from "react";
 import Rental from "./Rental";
-
+import EstateCarousel from "./EstateCarousel";
 
 const ListingPage = () => {
   const [isDisplayChecked, setIsDisplayCheck] = useState(true);
   const [isFilterChecked, setIsFilterCheck] = useState(false);
   const [isLikedChecked, setIsLikedCheck] = useState(false);
-  
+
   const [data1, setData] = useState();
   const [sortBy, setsortBy] = useState();
 
@@ -35,7 +35,9 @@ const ListingPage = () => {
   const [maxRoomsFilter, setmaxRoomsFilter] = useState();
   const [minBathroomsFilter, setminBathroomsFilter] = useState();
   const [maxBathroomsFilter, setmaxBathroomsFilter] = useState();
-  const [likedItems, setLikedItems] = useState(JSON.parse(localStorage.getItem('items')) || []);
+  const [likedItems, setLikedItems] = useState(
+    JSON.parse(localStorage.getItem("items")) || []
+  );
 
   useEffect(() => {
     setData(data.results);
@@ -84,7 +86,7 @@ const ListingPage = () => {
     if (isLikedChecked) {
       setNewList(
         data1.filter((value) => {
-          const isInFavorite = likedItems.some(item => item==value.zpid);
+          const isInFavorite = likedItems.some((item) => item == value.zpid);
           console.log(isInFavorite);
           return (
             value?.price > minPriceNull &&
@@ -96,7 +98,6 @@ const ListingPage = () => {
             value?.bathrooms >= minBathroomsNull &&
             value?.bathrooms <= maxBathroomsNull &&
             isInFavorite
-            
           );
         })
       );
@@ -117,7 +118,6 @@ const ListingPage = () => {
       );
     }
     setminBathroomsFilter(1);
-
   }
   function handleResetTextList() {
     setminPriceFilter(null);
@@ -139,14 +139,14 @@ const ListingPage = () => {
     if (!isLikedChecked) {
       setNewList(
         data1.filter((value) => {
-          return likedItems.some(item => item==value.zpid);
+          return likedItems.some((item) => item == value.zpid);
         })
       );
     } else setNewList(data1);
     setIsLikedCheck(!isLikedChecked);
   }
   function handleResetLiked() {
-    setLikedItems([])
+    setLikedItems([]);
   }
 
   return (
@@ -347,14 +347,14 @@ const ListingPage = () => {
       </div>
       {isDisplayChecked ? (
         <div id="carousel-display-mode-div">
-          <Carousel cols={2} rows={1} gap={0} loop mobileBreakpoint={600}>
+          {/* <Carousel cols={2} rows={1} gap={0} loop mobileBreakpoint={600}>
             {newList &&
               newList.map((value, index) => {
                 if (index < 12)
                   return (
                     <Carousel.Item key={index * 11}>
                       <Rental
-                      likedItems = {likedItems}
+                        likedItems={likedItems}
                         setLikedItems={setLikedItems}
                         id={`carouselnum${index}`}
                         key={value.zpid}
@@ -363,7 +363,22 @@ const ListingPage = () => {
                     </Carousel.Item>
                   );
               })}
-          </Carousel>
+          </Carousel> */}
+          <EstateCarousel show={2}>
+            {newList &&
+              newList.map((value, index) => {
+                if (index < 12)
+                  return (
+                    <Rental
+                      likedItems={likedItems}
+                      setLikedItems={setLikedItems}
+                      id={`carouselnum${index}`}
+                      key={value.zpid}
+                      value={value}
+                    />
+                  );
+              })}
+          </EstateCarousel>
         </div>
       ) : (
         <div id="display-horizontal-container">
@@ -373,7 +388,7 @@ const ListingPage = () => {
                 if (index < 12)
                   return (
                     <Rental
-                    likedItems = {likedItems}
+                      likedItems={likedItems}
                       setLikedItems={setLikedItems}
                       key={value.zpid}
                       id={`carouselnum${index}`}
@@ -384,7 +399,6 @@ const ListingPage = () => {
           </div>
         </div>
       )}
-      
     </>
   );
 };
