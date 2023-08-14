@@ -1,5 +1,4 @@
 import "./ListingPage.css";
-import Carousel from "better-react-carousel";
 import data from "../data.json";
 import { useState, useEffect } from "react";
 import Rental from "./Rental";
