@@ -1,14 +1,13 @@
 import "./rental.css";
 import { Link } from "react-router-dom";
-import { useEffect, } from "react";
+import { useEffect } from "react";
 
 function Rental(value) {
   const { setLikedItems, likedItems } = value;
 
-
   useEffect(() => {
-    localStorage.setItem("items", JSON.stringify(likedItems))
-  },[likedItems])
+    localStorage.setItem("items", JSON.stringify(likedItems));
+  }, [likedItems]);
 
   function handleLikeClick() {
     setLikedItems((prev) => {
@@ -20,7 +19,7 @@ function Rental(value) {
   }
 
   return (
-    <div id="all-estate-container">
+    <div className="all-estate-container">
       <Link to={`../estate/${value.value.zpid}`}>
         <div className="place-box">
           <div id="place-picture-box">

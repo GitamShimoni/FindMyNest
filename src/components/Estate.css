@@ -1,69 +1,71 @@
-.place-box-page{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3vw;
-    margin-right: 6vw;
-    
+.place-box-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vw;
+  margin-right: 6vw;
 }
-.description-page-box{
-    height: 40vw;
+.description-page-box {
+  height: 40vw;
 }
-.place-img-page{
-    border-radius: 15px;
-    width: 45vw;
-    min-width: 300px;
+.place-img-page {
+  border-radius: 15px;
+  width: 45vw;
+  min-width: 300px;
 }
-#place-imgdiv-page{
-    z-index: -2;
-    position: relative;
-    overflow: hidden;
-    border-radius: 25px;
+#place-imgdiv-page {
+  z-index: -2;
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
 }
-#place-imgdiv-page:before{
-    content: "";
-    background: linear-gradient(111deg, rgba(72,147,255,1) 0%, rgba(42,46,255,1) 100%);
-    width: 36vw;
-    height: 19vw;
-    min-height: 101px;
-    right: -30%;
-    top: -20%;
-    border-radius: 60%;
-    transform: rotateZ(10deg);
-    z-index: 0;
-    position: absolute;
-    min-width: 300px;
+#place-imgdiv-page:before {
+  content: "";
+  background: linear-gradient(
+    111deg,
+    rgba(72, 147, 255, 1) 0%,
+    rgba(42, 46, 255, 1) 100%
+  );
+  width: 36vw;
+  height: 19vw;
+  min-height: 101px;
+  right: -30%;
+  top: -20%;
+  border-radius: 60%;
+  transform: rotateZ(10deg);
+  z-index: 0;
+  position: absolute;
+  min-width: 300px;
 }
-.place-name-page{
-    position: absolute;
-    top: 5%;
-    right: 2%;
-    color: white;
-    font-size: 2.5vw;
+.place-name-page {
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  color: white;
+  font-size: 2.5vw;
 }
-#backbutton-icon{
-    font-size: 4vw;
-    box-shadow: 0px 0px 10px 4px #9f9f9f;
-    border-radius: 5vw;
-    background-color: white;
-    transition: 0.6s;
-    color: rgb(85, 114, 244);
+#backbutton-icon {
+  font-size: 4vw;
+  box-shadow: 0px 0px 10px 4px #9f9f9f;
+  border-radius: 5vw;
+  background-color: white;
+  transition: 0.6s;
+  color: rgb(85, 114, 244);
 }
-#backbutton-icon:hover{
-    box-shadow: 0px 0px 20px 8px #4d7aab;
-
+#backbutton-icon:hover {
+  box-shadow: 0px 0px 20px 8px #4d7aab;
 }
-#backbutton-div{
-    margin-top: 2vw;
-    margin-right: 5vw;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+#backbutton-div {
+  margin-top: 2vw;
+  margin-right: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
-#backbutton-button{
-    border: none;
+#backbutton-button {
+  border: none;
 }
-#estate-heart-icon-div{
-    margin: 2vw;
+#estate-heart-icon-div {
+  margin: 2vw;
 }
